@@ -16,6 +16,7 @@ client_id=
 client_secret=
 upstream=
 endpoint_port=
+provider
 ```
 
 Example of mine (with redactions of the important bits)
@@ -26,4 +27,5 @@ client_id="somethingsomething.apps.googleusercontent.com"
 client_secret="secretstring"
 upstream="http://192.168.1.111:8080/"
 endpoint_port=4180
+provider="google"
 ```
