@@ -10,6 +10,6 @@ RUN apk add --no-cache wget
 
 RUN apk --no-cache add curl
 
-RUN app/install.sh
+RUN /app/install.sh
 
 ENTRYPOINT app/entrypoint.sh
