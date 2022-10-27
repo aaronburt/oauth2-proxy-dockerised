@@ -12,6 +12,8 @@ RUN apk add nano
 
 RUN apk add curl
 
-RUN ["/bin/sh", "/app/install.sh"]
+#RUN ["/bin/sh", "/app/install.sh"]
 
-ENTRYPOINT ["sh", "/app/entrypoint.sh"]
+ENTRYPOINT [ "/bin/sh" ]
+
+#ENTRYPOINT ["sh", "/app/entrypoint.sh"]
