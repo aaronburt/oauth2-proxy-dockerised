@@ -2,14 +2,16 @@ FROM alpine:latest
 
 WORKDIR /app
 
-ADD app app
+ADD app/ /app/
 
 RUN apk update
 
-RUN apk add --no-cache wget
+RUN apk add wget
 
-RUN apk --no-cache add curl
+RUN apk add nano
 
-RUN /app/install.sh
+RUN apk add curl
 
-ENTRYPOINT app/entrypoint.sh
+RUN ["/bin/sh", "/app/install.sh"]
+
+ENTRYPOINT ["sh", "/app/entrypoint.sh"]
