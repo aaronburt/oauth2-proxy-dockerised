@@ -46,6 +46,8 @@ endpoint_port=4180
 provider="google"
 ```
 
+You will also need a ```emails``` (Make sure it has no extensions) file located in the app directory. For every email you want to authorise will need to be on a new line.
+
 Once you have all things in order then you should be able to run the container with
 
 ```
