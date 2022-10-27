@@ -6,9 +6,9 @@ ADD app/ /app/
 
 RUN apk update
 
-RUN apk add --no-cache wget
+RUN apk add wget
 
-RUN apk --no-cache add curl
+RUN apk add nano
 
 RUN ["sh", "/app/install.sh"]
 
