@@ -6,6 +6,8 @@ ADD app/ /app/
 
 RUN apk update
 
+RUN apk add curl
+
 RUN apk add wget
 
 RUN apk add nano
