@@ -14,4 +14,4 @@ RUN apk add nano
 
 RUN ["sh", "/app/install.sh"]
 
-ENTRYPOINT /app/entrypoint.sh
+ENTRYPOINT ["sh", "/app/entrypoint.sh"]
