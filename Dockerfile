@@ -14,4 +14,6 @@ RUN apk add nano
 
 RUN ["sh", "/app/install.sh"]
 
+RUN ["chmod", "+x", "/app/entrypoint.sh"]
+
 ENTRYPOINT ["sh", "/app/entrypoint.sh"]
